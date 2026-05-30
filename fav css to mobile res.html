@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favourite Things Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .main-title {
+            text-align: center;
+            color: darkblue;
+            transition: color 0.5s ease;
+        }
+
+        .main-title:hover {
+            color: purple;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: purple;
+        }
+
+        p,
+        li {
+            font-size: 18px;
+            color: #333;
+        }
+
+        ol,
+        ul {
+            padding-left: 25px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Tablet View */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .main-title {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+            }
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .main-title {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="main-title">My Favourite Things</h1>
+
+        <p>
+            <strong>Welcome</strong> to my favourite things page.<br>
+            I like <em>music</em>, <u>travelling</u>, and <mark>telling stories</mark>.
+        </p>
+
+        <div class="section">
+            <h2>My Favourite Movies</h2>
+            <ol>
+                <li>Fidaa</li>
+                <li>Karthikeya 2</li>
+                <li>Godavari</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Listening to Music</li>
+                <li>Watching Dramas</li>
+                <li>Telling Stories</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
