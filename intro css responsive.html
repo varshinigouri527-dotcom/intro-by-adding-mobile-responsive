@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Introduction</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .main-title {
+            text-align: center;
+            color: darkblue;
+            transition: color 0.5s ease;
+        }
+
+        .main-title:hover {
+            color: purple;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: purple;
+        }
+
+        p,
+        li {
+            font-size: 18px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Tablet View */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .main-title {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+            }
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .main-title {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="main-title">My Introduction</h1>
+
+        <hr>
+
+        <div class="section">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Varshini.
+                <br>
+                I am learning HTML.
+                <br>
+                I like coding.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Reading Books</li>
+                <li>Watching Movies</li>
+                <li>Listening to Music</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>My Goal</h2>
+
+            <p>
+                I want to become a Software Engineer.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
