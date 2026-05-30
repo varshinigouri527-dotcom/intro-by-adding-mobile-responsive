@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Registration Form</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #dbeafe, #fce7f3);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 450px;
+            max-width: 100%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .main-title {
+            text-align: center;
+            color: #7c3aed;
+            margin-bottom: 25px;
+            transition: color 0.3s ease;
+        }
+
+        .main-title:hover {
+            color: #5b21b6;
+        }
+
+        label {
+            font-weight: bold;
+            color: #374151;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .form-actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #7c3aed;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #5b21b6;
+        }
+
+        .btn-secondary {
+            background-color: #ef4444;
+        }
+
+        .btn-secondary:hover {
+            background-color: #dc2626;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Tablet View */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .main-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            .main-title {
+                font-size: 24px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                display: inline-block;
+                margin-top: 8px;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 8px 0;
+            }
+
+            .form-actions {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="main-title">College Registration Form</h2>
+
+        <form class="form">
+
+            <label>Full Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email"><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" placeholder="Enter password"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <br><br>
+
+            <label>Courses Interested:</label><br>
+            <input type="checkbox"> CSE
+            <input type="checkbox"> ECE
+            <input type="checkbox"> MECH
+            <input type="checkbox"> CIVIL
+            <br><br>
+
+            <label>Select Year:</label><br>
+            <select>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+            <br><br>
+
+            <label>Address:</label><br>
+            <textarea rows="4" placeholder="Enter your address"></textarea>
+            <br><br>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Register</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
