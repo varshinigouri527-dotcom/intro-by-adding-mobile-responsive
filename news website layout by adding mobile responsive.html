@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website Layout</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        /* Header */
+        header{
+            background:#1e3a8a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* Navigation */
+        nav{
+            background:#333;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        nav ul li{
+            margin:0;
+        }
+
+        nav ul li a{
+            display:block;
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+        }
+
+        nav ul li a:hover{
+            background:#555;
+        }
+
+        /* Main Content */
+        .container{
+            display:flex;
+            gap:20px;
+            padding:20px;
+        }
+
+        .main-news{
+            flex:3;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .sidebar{
+            flex:1;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .news-card{
+            margin-bottom:20px;
+            padding-bottom:15px;
+            border-bottom:1px solid #ddd;
+        }
+
+        .news-card h2{
+            color:#1e3a8a;
+            margin-bottom:10px;
+        }
+
+        .news-card p{
+            color:#555;
+            line-height:1.6;
+        }
+
+        .sidebar ul{
+            list-style:none;
+        }
+
+        .sidebar ul li{
+            padding:10px 0;
+            border-bottom:1px solid #ddd;
+        }
+
+        /* Footer */
+        footer{
+            background:#1e3a8a;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        /* Mobile Responsive */
+        @media(max-width:768px){
+
+            .container{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+            }
+
+            nav ul li a{
+                text-align:center;
+                border-bottom:1px solid #444;
+            }
+
+            header h1{
+                font-size:24px;
+            }
+
+            .news-card h2{
+                font-size:20px;
+            }
+        }
+
+        @media(max-width:480px){
+
+            .container{
+                padding:10px;
+            }
+
+            .main-news,
+            .sidebar{
+                padding:15px;
+            }
+
+            header h1{
+                font-size:20px;
+            }
+
+            .news-card h2{
+                font-size:18px;
+            }
+
+            .news-card p,
+            .sidebar li{
+                font-size:14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daily News</h1>
+        <p>Your Trusted News Source</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Entertainment</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section class="main-news">
+
+            <div class="news-card">
+                <h2>Breaking News Headline</h2>
+                <p>
+                    This is the main news article. Add your latest news
+                    content here. Readers can stay informed about current
+                    events and important updates.
+                </p>
+            </div>
+
+            <div class="news-card">
+                <h2>Technology Update</h2>
+                <p>
+                    Discover the latest advancements in technology,
+                    innovations, and trends shaping the future.
+                </p>
+            </div>
+
+            <div class="news-card">
+                <h2>Sports Highlights</h2>
+                <p>
+                    Catch up with the latest scores, match highlights,
+                    and sports updates from around the world.
+                </p>
+            </div>
+
+        </section>
+
+        <aside class="sidebar">
+            <h2>Trending News</h2>
+            <ul>
+                <li>Global Market Updates</li>
+                <li>AI Innovations</li>
+                <li>Cricket World News</li>
+                <li>Movie Releases</li>
+                <li>Health & Lifestyle</li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Daily News. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
